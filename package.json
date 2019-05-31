@@ -1,0 +1,25 @@
+{
+  "name": "natural-language",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/loopDelicious/natural-language.git"
+  },
+  "author": "joyce lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loopDelicious/natural-language/issues"
+  },
+  "homepage": "https://github.com/loopDelicious/natural-language#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
