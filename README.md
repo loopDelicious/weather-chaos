@@ -4,6 +4,19 @@ Install dependencies
 
     $ npm install
 
+Update your secrets
+
+Get an API key from [OpenWeatherMap](https://openweathermap.org/api). One method to manage your sensitive information is to create a `secrets.js` file and then access your secret in `server.js`.
+
+```
+const secrets = {
+    openweather: "**********"
+}
+
+module.exports = secrets;
+
+```
+
 Start server, and visit `http://localhost:3000/`
 
     $ node server.js
