@@ -1,23 +1,25 @@
 {
-  "name": "natural-language",
+  "name": "weather-chaos",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "deploy": "./bin/deploy.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/loopDelicious/natural-language.git"
+    "url": "git+ssh://git@github.com/loopDelicious/weather-chaos.git"
   },
   "author": "joyce lin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/loopDelicious/natural-language/issues"
+    "url": "https://github.com/loopDelicious/weather-chaos/issues"
   },
-  "homepage": "https://github.com/loopDelicious/natural-language#readme",
+  "homepage": "https://github.com/loopDelicious/weather-chaos#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
     "express": "^4.17.1",
     "request": "^2.88.0"

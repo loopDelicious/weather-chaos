@@ -1,8 +1,8 @@
 const express = require('express')
-let request = require('request');
+let request = require('request')
 const bodyParser = require('body-parser')
-let secrets = require('./secrets');
 const app = express()
+require('dotenv').config()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 
 app.post('/', function (req, res) {
   let city = req.body.city;
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${secrets.openweather}`
+  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.OPENWEATHER}`
 
   request(url, function (err, response, body) {
     if(err){
@@ -32,6 +32,6 @@ app.post('/', function (req, res) {
 })
 
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(process.env.PORT, function () {
+  console.log(`Example app listening on port ${process.env.PORT}!`)
 })
